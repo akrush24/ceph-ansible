@@ -1,0 +1,40 @@
+- hosts: all
+  remote_user: cephadm
+  become: yes
+  become_user: root
+  become_method: sudo
+  tasks:
+  - name: copy hosts file
+    copy:
+      src: /etc/hosts
+      dest: /etc/hosts
+  - name: copy zabbix_agentd.conf
+    copy:
+      src: ./zabbix_agentd.conf
+      dest: "{{ item }}"
+    with_items:
+    - /etc/zabbix/
+    - /etc/
+  - name: install pkgs
+    yum:
+      name: "{{ packages }}"
+    vars: 
+      packages:
+      - chrony
+      - bash-completion
+      - zabbix40-agent
+  - name: Make sure a service is running
+    systemd:
+      state: started
+      name: "{{ item }}"
+    with_items:
+    - chronyd
+    - zabbix-agent
+  - name: enable service chronyd and ensure it is not masked
+    systemd:
+      name: "{{ item }}"
+      enabled: yes
+      masked: no
+    with_items:
+    - chronyd
+    - zabbix-agent
