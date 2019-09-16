@@ -1,0 +1,7 @@
+[nodes]
+n[01:03].sds.srv.local
+[osd]
+n[01:03].sds.srv.local
+[mon]
+n[01:03].sds.srv.local
+[mds]
