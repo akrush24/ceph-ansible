@@ -1,0 +1,652 @@
+[2019-09-17 00:10:55,709][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy install ceph-client
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ]  testing                       : None
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x7fe8aa4017e8>
+[2019-09-17 00:10:55,709][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  dev_commit                    : None
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_mds                   : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  stable                        : None
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  default_release               : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  username                      : None
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  adjust_repos                  : True
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  func                          : <function install at 0x7fe8aaedf5f0>
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_mgr                   : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_all                   : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  repo                          : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  host                          : ['ceph-client']
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_rgw                   : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_tests                 : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  repo_url                      : None
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  install_osd                   : False
+[2019-09-17 00:10:55,710][ceph_deploy.cli][INFO  ]  version_kind                  : stable
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  install_common                : False
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  dev                           : master
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  nogpgcheck                    : False
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  local_mirror                  : None
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  release                       : None
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  install_mon                   : False
+[2019-09-17 00:10:55,711][ceph_deploy.cli][INFO  ]  gpg_url                       : None
+[2019-09-17 00:10:55,711][ceph_deploy.install][DEBUG ] Installing stable version mimic on cluster ceph hosts ceph-client
+[2019-09-17 00:10:55,711][ceph_deploy.install][DEBUG ] Detecting platform for host ceph-client ...
+[2019-09-17 00:10:55,798][ceph_deploy][ERROR ] RuntimeError: connecting to host: ceph-client resulted in errors: HostNotFound ceph-client
+
+[2019-09-17 00:14:36,344][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy install --release nautilius ceph-gw
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  testing                       : None
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x7f022f0f17e8>
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  dev_commit                    : None
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  install_mds                   : False
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  stable                        : None
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  default_release               : False
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  username                      : None
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  adjust_repos                  : True
+[2019-09-17 00:14:36,345][ceph_deploy.cli][INFO  ]  func                          : <function install at 0x7f022fbcf5f0>
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_mgr                   : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_all                   : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  repo                          : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  host                          : ['ceph-gw']
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_rgw                   : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_tests                 : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  repo_url                      : None
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_osd                   : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  version_kind                  : stable
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  install_common                : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  dev                           : master
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  nogpgcheck                    : False
+[2019-09-17 00:14:36,346][ceph_deploy.cli][INFO  ]  local_mirror                  : None
+[2019-09-17 00:14:36,347][ceph_deploy.cli][INFO  ]  release                       : nautilius
+[2019-09-17 00:14:36,347][ceph_deploy.cli][INFO  ]  install_mon                   : False
+[2019-09-17 00:14:36,347][ceph_deploy.cli][INFO  ]  gpg_url                       : None
+[2019-09-17 00:14:36,347][ceph_deploy.install][DEBUG ] Installing stable version nautilius on cluster ceph hosts ceph-gw
+[2019-09-17 00:14:36,347][ceph_deploy.install][DEBUG ] Detecting platform for host ceph-gw ...
+[2019-09-17 00:14:36,395][ceph-gw][DEBUG ] connected to host: ceph-gw 
+[2019-09-17 00:14:36,396][ceph-gw][DEBUG ] detect platform information from remote host
+[2019-09-17 00:14:36,413][ceph-gw][DEBUG ] detect machine type
+[2019-09-17 00:14:36,417][ceph_deploy.install][INFO  ] Distro info: CentOS Linux 7.6.1810 Core
+[2019-09-17 00:14:36,417][ceph-gw][INFO  ] installing Ceph on ceph-gw
+[2019-09-17 00:14:36,419][ceph-gw][INFO  ] Running command: yum clean all
+[2019-09-17 00:14:36,570][ceph-gw][DEBUG ] Loaded plugins: fastestmirror
+[2019-09-17 00:14:36,614][ceph-gw][DEBUG ] Cleaning repos: Ceph Ceph-noarch base ceph-source epel extras updates
+[2019-09-17 00:14:36,628][ceph-gw][DEBUG ] Cleaning up list of fastest mirrors
+[2019-09-17 00:14:36,631][ceph-gw][INFO  ] Running command: yum -y install epel-release
+[2019-09-17 00:14:36,778][ceph-gw][DEBUG ] Loaded plugins: fastestmirror
+[2019-09-17 00:14:36,796][ceph-gw][DEBUG ] Determining fastest mirrors
+[2019-09-17 00:14:38,427][ceph-gw][DEBUG ]  * base: dedic.sh
+[2019-09-17 00:14:38,427][ceph-gw][DEBUG ]  * epel: fedora-mirror02.rbc.ru
+[2019-09-17 00:14:38,427][ceph-gw][DEBUG ]  * extras: mirror.reconn.ru
+[2019-09-17 00:14:38,427][ceph-gw][DEBUG ]  * updates: mirror.sale-dedic.com
+[2019-09-17 00:14:43,732][ceph-gw][DEBUG ] Package epel-release-7-11.noarch already installed and latest version
+[2019-09-17 00:14:43,732][ceph-gw][DEBUG ] Nothing to do
+[2019-09-17 00:14:43,735][ceph-gw][INFO  ] Running command: yum -y install yum-plugin-priorities
+[2019-09-17 00:14:43,887][ceph-gw][DEBUG ] Loaded plugins: fastestmirror
+[2019-09-17 00:14:43,898][ceph-gw][DEBUG ] Loading mirror speeds from cached hostfile
+[2019-09-17 00:14:43,909][ceph-gw][DEBUG ]  * base: dedic.sh
+[2019-09-17 00:14:43,909][ceph-gw][DEBUG ]  * epel: fedora-mirror02.rbc.ru
+[2019-09-17 00:14:43,909][ceph-gw][DEBUG ]  * extras: mirror.reconn.ru
+[2019-09-17 00:14:43,909][ceph-gw][DEBUG ]  * updates: mirror.sale-dedic.com
+[2019-09-17 00:14:44,167][ceph-gw][DEBUG ] Resolving Dependencies
+[2019-09-17 00:14:44,167][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:14:44,167][ceph-gw][DEBUG ] ---> Package yum-plugin-priorities.noarch 0:1.1.31-50.el7 will be installed
+[2019-09-17 00:14:45,899][ceph-gw][DEBUG ] --> Finished Dependency Resolution
+[2019-09-17 00:14:45,949][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:45,949][ceph-gw][DEBUG ] Dependencies Resolved
+[2019-09-17 00:14:45,949][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:45,949][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:45,949][ceph-gw][DEBUG ]  Package                     Arch         Version              Repository  Size
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Installing:
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ]  yum-plugin-priorities       noarch       1.1.31-50.el7        base        29 k
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Transaction Summary
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Install  1 Package
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Total download size: 29 k
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Installed size: 28 k
+[2019-09-17 00:14:45,950][ceph-gw][DEBUG ] Downloading packages:
+[2019-09-17 00:14:46,047][ceph-gw][DEBUG ] Running transaction check
+[2019-09-17 00:14:46,047][ceph-gw][DEBUG ] Running transaction test
+[2019-09-17 00:14:46,057][ceph-gw][DEBUG ] Transaction test succeeded
+[2019-09-17 00:14:46,057][ceph-gw][DEBUG ] Running transaction
+[2019-09-17 00:14:46,287][ceph-gw][DEBUG ]   Installing : yum-plugin-priorities-1.1.31-50.el7.noarch                   1/1 
+[2019-09-17 00:14:46,461][ceph-gw][DEBUG ]   Verifying  : yum-plugin-priorities-1.1.31-50.el7.noarch                   1/1 
+[2019-09-17 00:14:46,461][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:46,461][ceph-gw][DEBUG ] Installed:
+[2019-09-17 00:14:46,461][ceph-gw][DEBUG ]   yum-plugin-priorities.noarch 0:1.1.31-50.el7                                  
+[2019-09-17 00:14:46,462][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:46,462][ceph-gw][DEBUG ] Complete!
+[2019-09-17 00:14:46,481][ceph-gw][DEBUG ] Configure Yum priorities to include obsoletes
+[2019-09-17 00:14:46,484][ceph-gw][WARNING] check_obsoletes has been enabled for Yum priorities plugin
+[2019-09-17 00:14:46,485][ceph-gw][INFO  ] Running command: rpm --import https://download.ceph.com/keys/release.asc
+[2019-09-17 00:14:47,427][ceph-gw][INFO  ] Running command: yum remove -y ceph-release
+[2019-09-17 00:14:47,631][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:14:47,675][ceph-gw][DEBUG ] Resolving Dependencies
+[2019-09-17 00:14:47,675][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:14:47,675][ceph-gw][DEBUG ] ---> Package ceph-release.noarch 0:1-1.el7 will be erased
+[2019-09-17 00:14:48,044][ceph-gw][DEBUG ] --> Finished Dependency Resolution
+[2019-09-17 00:14:48,144][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,144][ceph-gw][DEBUG ] Dependencies Resolved
+[2019-09-17 00:14:48,144][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,144][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:48,144][ceph-gw][DEBUG ]  Package              Arch           Version            Repository         Size
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Removing:
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ]  ceph-release         noarch         1-1.el7            installed         544  
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Transaction Summary
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Remove  1 Package
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Installed size: 544  
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Downloading packages:
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Running transaction check
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Running transaction test
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Transaction test succeeded
+[2019-09-17 00:14:48,145][ceph-gw][DEBUG ] Running transaction
+[2019-09-17 00:14:48,224][ceph-gw][DEBUG ]   Erasing    : ceph-release-1-1.el7.noarch                                  1/1 
+[2019-09-17 00:14:48,291][ceph-gw][DEBUG ]   Verifying  : ceph-release-1-1.el7.noarch                                  1/1 
+[2019-09-17 00:14:48,291][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,292][ceph-gw][DEBUG ] Removed:
+[2019-09-17 00:14:48,292][ceph-gw][DEBUG ]   ceph-release.noarch 0:1-1.el7                                                 
+[2019-09-17 00:14:48,292][ceph-gw][DEBUG ] 
+[2019-09-17 00:14:48,292][ceph-gw][DEBUG ] Complete!
+[2019-09-17 00:14:48,293][ceph-gw][INFO  ] Running command: yum install -y https://download.ceph.com/rpm-nautilius/el7/noarch/ceph-release-1-0.el7.noarch.rpm
+[2019-09-17 00:14:48,439][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:14:49,263][ceph-gw][WARNING] Cannot open: https://download.ceph.com/rpm-nautilius/el7/noarch/ceph-release-1-0.el7.noarch.rpm. Skipping.
+[2019-09-17 00:14:49,264][ceph-gw][WARNING] Error: Nothing to do
+[2019-09-17 00:14:49,265][ceph-gw][ERROR ] RuntimeError: command returned non-zero exit status: 1
+[2019-09-17 00:14:49,265][ceph_deploy][ERROR ] RuntimeError: Failed to execute command: yum install -y https://download.ceph.com/rpm-nautilius/el7/noarch/ceph-release-1-0.el7.noarch.rpm
+
+[2019-09-17 00:15:14,996][ceph_deploy.conf][DEBUG ] found configuration file at: /root/.cephdeploy.conf
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ] Invoked (2.0.1): /usr/bin/ceph-deploy install --release nautilus ceph-gw
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ] ceph-deploy options:
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  verbose                       : False
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  testing                       : None
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  cd_conf                       : <ceph_deploy.conf.cephdeploy.Conf instance at 0x7f711ddc77e8>
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  cluster                       : ceph
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  dev_commit                    : None
+[2019-09-17 00:15:14,996][ceph_deploy.cli][INFO  ]  install_mds                   : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  stable                        : None
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  default_release               : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  username                      : None
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  adjust_repos                  : True
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  func                          : <function install at 0x7f711e8a55f0>
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_mgr                   : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_all                   : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  repo                          : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  host                          : ['ceph-gw']
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_rgw                   : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_tests                 : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  repo_url                      : None
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  ceph_conf                     : None
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_osd                   : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  version_kind                  : stable
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  install_common                : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  overwrite_conf                : False
+[2019-09-17 00:15:14,997][ceph_deploy.cli][INFO  ]  quiet                         : False
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  dev                           : master
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  nogpgcheck                    : False
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  local_mirror                  : None
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  release                       : nautilus
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  install_mon                   : False
+[2019-09-17 00:15:14,998][ceph_deploy.cli][INFO  ]  gpg_url                       : None
+[2019-09-17 00:15:14,998][ceph_deploy.install][DEBUG ] Installing stable version nautilus on cluster ceph hosts ceph-gw
+[2019-09-17 00:15:14,998][ceph_deploy.install][DEBUG ] Detecting platform for host ceph-gw ...
+[2019-09-17 00:15:15,045][ceph-gw][DEBUG ] connected to host: ceph-gw 
+[2019-09-17 00:15:15,045][ceph-gw][DEBUG ] detect platform information from remote host
+[2019-09-17 00:15:15,063][ceph-gw][DEBUG ] detect machine type
+[2019-09-17 00:15:15,066][ceph_deploy.install][INFO  ] Distro info: CentOS Linux 7.6.1810 Core
+[2019-09-17 00:15:15,066][ceph-gw][INFO  ] installing Ceph on ceph-gw
+[2019-09-17 00:15:15,068][ceph-gw][INFO  ] Running command: yum clean all
+[2019-09-17 00:15:15,218][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:15,229][ceph-gw][DEBUG ] Cleaning repos: base epel extras updates
+[2019-09-17 00:15:15,242][ceph-gw][DEBUG ] Cleaning up list of fastest mirrors
+[2019-09-17 00:15:15,242][ceph-gw][DEBUG ] Other repos take up 1.6 M of disk space (use --verbose for details)
+[2019-09-17 00:15:15,245][ceph-gw][INFO  ] Running command: yum -y install epel-release
+[2019-09-17 00:15:15,386][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:15,386][ceph-gw][DEBUG ] Determining fastest mirrors
+[2019-09-17 00:15:17,309][ceph-gw][DEBUG ]  * base: mirror.docker.ru
+[2019-09-17 00:15:17,309][ceph-gw][DEBUG ]  * epel: fedora-mirror02.rbc.ru
+[2019-09-17 00:15:17,309][ceph-gw][DEBUG ]  * extras: mirror.docker.ru
+[2019-09-17 00:15:17,310][ceph-gw][DEBUG ]  * updates: mirror.docker.ru
+[2019-09-17 00:15:21,526][ceph-gw][DEBUG ] Package epel-release-7-11.noarch already installed and latest version
+[2019-09-17 00:15:21,526][ceph-gw][DEBUG ] Nothing to do
+[2019-09-17 00:15:21,529][ceph-gw][INFO  ] Running command: yum -y install yum-plugin-priorities
+[2019-09-17 00:15:21,679][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:21,690][ceph-gw][DEBUG ] Loading mirror speeds from cached hostfile
+[2019-09-17 00:15:21,701][ceph-gw][DEBUG ]  * base: mirror.docker.ru
+[2019-09-17 00:15:21,701][ceph-gw][DEBUG ]  * epel: fedora-mirror02.rbc.ru
+[2019-09-17 00:15:21,701][ceph-gw][DEBUG ]  * extras: mirror.docker.ru
+[2019-09-17 00:15:21,701][ceph-gw][DEBUG ]  * updates: mirror.docker.ru
+[2019-09-17 00:15:21,909][ceph-gw][DEBUG ] Package yum-plugin-priorities-1.1.31-50.el7.noarch already installed and latest version
+[2019-09-17 00:15:21,910][ceph-gw][DEBUG ] Nothing to do
+[2019-09-17 00:15:21,911][ceph-gw][DEBUG ] Configure Yum priorities to include obsoletes
+[2019-09-17 00:15:21,912][ceph-gw][WARNING] check_obsoletes has been enabled for Yum priorities plugin
+[2019-09-17 00:15:21,913][ceph-gw][INFO  ] Running command: rpm --import https://download.ceph.com/keys/release.asc
+[2019-09-17 00:15:22,810][ceph-gw][INFO  ] Running command: yum remove -y ceph-release
+[2019-09-17 00:15:22,959][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:23,058][ceph-gw][WARNING] No Match for argument: ceph-release
+[2019-09-17 00:15:23,125][ceph-gw][DEBUG ] No Packages marked for removal
+[2019-09-17 00:15:23,127][ceph-gw][INFO  ] Running command: yum install -y https://download.ceph.com/rpm-nautilus/el7/noarch/ceph-release-1-0.el7.noarch.rpm
+[2019-09-17 00:15:23,270][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:24,096][ceph-gw][DEBUG ] Examining /var/tmp/yum-root-qGn9CJ/ceph-release-1-0.el7.noarch.rpm: ceph-release-1-1.el7.noarch
+[2019-09-17 00:15:24,096][ceph-gw][DEBUG ] Marking /var/tmp/yum-root-qGn9CJ/ceph-release-1-0.el7.noarch.rpm to be installed
+[2019-09-17 00:15:24,096][ceph-gw][DEBUG ] Resolving Dependencies
+[2019-09-17 00:15:24,096][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:24,097][ceph-gw][DEBUG ] ---> Package ceph-release.noarch 0:1-1.el7 will be installed
+[2019-09-17 00:15:24,773][ceph-gw][DEBUG ] --> Finished Dependency Resolution
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] Dependencies Resolved
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ]  Package          Arch       Version     Repository                        Size
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] Installing:
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ]  ceph-release     noarch     1-1.el7     /ceph-release-1-0.el7.noarch     544  
+[2019-09-17 00:15:24,775][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Transaction Summary
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Install  1 Package
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Total size: 544  
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Installed size: 544  
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Downloading packages:
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Running transaction check
+[2019-09-17 00:15:24,776][ceph-gw][DEBUG ] Running transaction test
+[2019-09-17 00:15:24,783][ceph-gw][DEBUG ] Transaction test succeeded
+[2019-09-17 00:15:24,783][ceph-gw][DEBUG ] Running transaction
+[2019-09-17 00:15:24,827][ceph-gw][DEBUG ]   Installing : ceph-release-1-1.el7.noarch                                  1/1 
+[2019-09-17 00:15:24,919][ceph-gw][DEBUG ]   Verifying  : ceph-release-1-1.el7.noarch                                  1/1 
+[2019-09-17 00:15:24,919][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,919][ceph-gw][DEBUG ] Installed:
+[2019-09-17 00:15:24,920][ceph-gw][DEBUG ]   ceph-release.noarch 0:1-1.el7                                                 
+[2019-09-17 00:15:24,920][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:24,920][ceph-gw][DEBUG ] Complete!
+[2019-09-17 00:15:24,920][ceph-gw][WARNING] ensuring that /etc/yum.repos.d/ceph.repo contains a high priority
+[2019-09-17 00:15:24,921][ceph-gw][WARNING] altered ceph.repo priorities to contain: priority=1
+[2019-09-17 00:15:24,923][ceph-gw][INFO  ] Running command: yum -y install ceph ceph-radosgw
+[2019-09-17 00:15:25,069][ceph-gw][DEBUG ] Loaded plugins: fastestmirror, priorities
+[2019-09-17 00:15:25,075][ceph-gw][DEBUG ] Loading mirror speeds from cached hostfile
+[2019-09-17 00:15:25,077][ceph-gw][DEBUG ]  * base: mirror.docker.ru
+[2019-09-17 00:15:25,077][ceph-gw][DEBUG ]  * epel: fedora-mirror02.rbc.ru
+[2019-09-17 00:15:25,077][ceph-gw][DEBUG ]  * extras: mirror.docker.ru
+[2019-09-17 00:15:25,077][ceph-gw][DEBUG ]  * updates: mirror.docker.ru
+[2019-09-17 00:15:26,599][ceph-gw][DEBUG ] 8 packages excluded due to repository priority protections
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] Resolving Dependencies
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] ---> Package ceph.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: ceph-osd = 2:14.2.4-0.el7 for package: 2:ceph-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: ceph-mds = 2:14.2.4-0.el7 for package: 2:ceph-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: ceph-mgr = 2:14.2.4-0.el7 for package: 2:ceph-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: ceph-mon = 2:14.2.4-0.el7 for package: 2:ceph-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] ---> Package ceph-radosgw.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: librados2 = 2:14.2.4-0.el7 for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,297][ceph-gw][DEBUG ] --> Processing Dependency: librgw2 = 2:14.2.4-0.el7 for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,308][ceph-gw][DEBUG ] --> Processing Dependency: ceph-selinux = 2:14.2.4-0.el7 for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,308][ceph-gw][DEBUG ] --> Processing Dependency: ceph-base = 2:14.2.4-0.el7 for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,308][ceph-gw][DEBUG ] --> Processing Dependency: mailcap for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,308][ceph-gw][DEBUG ] --> Processing Dependency: librados.so.2(LIBRADOS_14.2.0)(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,308][ceph-gw][DEBUG ] --> Processing Dependency: libibverbs.so.1()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Processing Dependency: librados.so.2()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Processing Dependency: libceph-common.so.0()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Processing Dependency: liboath.so.0()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Processing Dependency: librabbitmq.so.4()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Processing Dependency: librdmacm.so.1()(64bit) for package: 2:ceph-radosgw-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,320][ceph-gw][DEBUG ] ---> Package ceph-base.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,332][ceph-gw][DEBUG ] --> Processing Dependency: libcephfs2 = 2:14.2.4-0.el7 for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,332][ceph-gw][DEBUG ] --> Processing Dependency: librbd1 = 2:14.2.4-0.el7 for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,332][ceph-gw][DEBUG ] --> Processing Dependency: ceph-common = 2:14.2.4-0.el7 for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,333][ceph-gw][DEBUG ] --> Processing Dependency: psmisc for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,333][ceph-gw][DEBUG ] --> Processing Dependency: cryptsetup for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] --> Processing Dependency: python-requests for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] --> Processing Dependency: libleveldb.so.1()(64bit) for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] --> Processing Dependency: liblttng-ust.so.0()(64bit) for package: 2:ceph-base-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] ---> Package ceph-mds.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] ---> Package ceph-mgr.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] --> Processing Dependency: python-bcrypt for package: 2:ceph-mgr-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,334][ceph-gw][DEBUG ] --> Processing Dependency: pyOpenSSL for package: 2:ceph-mgr-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,356][ceph-gw][DEBUG ] --> Processing Dependency: python-werkzeug for package: 2:ceph-mgr-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,356][ceph-gw][DEBUG ] --> Processing Dependency: python-cherrypy for package: 2:ceph-mgr-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,356][ceph-gw][DEBUG ] --> Processing Dependency: python-pecan for package: 2:ceph-mgr-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,356][ceph-gw][DEBUG ] ---> Package ceph-mon.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,356][ceph-gw][DEBUG ] ---> Package ceph-osd.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,357][ceph-gw][DEBUG ] --> Processing Dependency: libstoragemgmt for package: 2:ceph-osd-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,367][ceph-gw][DEBUG ] ---> Package ceph-selinux.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,367][ceph-gw][DEBUG ] ---> Package libibverbs.x86_64 0:17.2-3.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] --> Processing Dependency: rdma-core(x86-64) = 17.2-3.el7 for package: libibverbs-17.2-3.el7.x86_64
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package liboath.x86_64 0:2.6.2-1.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package librabbitmq.x86_64 0:0.8.0-2.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package librados2.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package librdmacm.x86_64 0:17.2-3.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package librgw2.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] ---> Package mailcap.noarch 0:2.1.41-2.el7 will be installed
+[2019-09-17 00:15:27,379][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,380][ceph-gw][DEBUG ] ---> Package ceph-common.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: libradosstriper1 = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-cephfs = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-rbd = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-ceph-argparse = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-rados = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-rgw = 2:14.2.4-0.el7 for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,381][ceph-gw][DEBUG ] --> Processing Dependency: python-prettytable for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,382][ceph-gw][DEBUG ] --> Processing Dependency: libradosstriper.so.1()(64bit) for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,382][ceph-gw][DEBUG ] --> Processing Dependency: libbabeltrace.so.1()(64bit) for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] --> Processing Dependency: libbabeltrace-ctf.so.1()(64bit) for package: 2:ceph-common-14.2.4-0.el7.x86_64
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] ---> Package cryptsetup.x86_64 0:2.0.3-3.el7 will be installed
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] ---> Package leveldb.x86_64 0:1.12.0-11.el7 will be installed
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] ---> Package libcephfs2.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] ---> Package librbd1.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] ---> Package libstoragemgmt.x86_64 0:1.6.2-4.el7 will be installed
+[2019-09-17 00:15:27,404][ceph-gw][DEBUG ] --> Processing Dependency: libstoragemgmt-python for package: libstoragemgmt-1.6.2-4.el7.x86_64
+[2019-09-17 00:15:27,405][ceph-gw][DEBUG ] --> Processing Dependency: libyajl.so.2()(64bit) for package: libstoragemgmt-1.6.2-4.el7.x86_64
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] --> Processing Dependency: libconfig.so.9()(64bit) for package: libstoragemgmt-1.6.2-4.el7.x86_64
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] ---> Package lttng-ust.x86_64 0:2.4.1-4.el7 will be installed
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] --> Processing Dependency: liburcu-bp.so.1()(64bit) for package: lttng-ust-2.4.1-4.el7.x86_64
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] --> Processing Dependency: liburcu-cds.so.1()(64bit) for package: lttng-ust-2.4.1-4.el7.x86_64
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] ---> Package psmisc.x86_64 0:22.20-15.el7 will be installed
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] ---> Package pyOpenSSL.x86_64 0:0.13.1-4.el7 will be installed
+[2019-09-17 00:15:27,416][ceph-gw][DEBUG ] ---> Package python-cherrypy.noarch 0:3.2.2-4.el7 will be installed
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] ---> Package python-pecan.noarch 0:0.4.5-2.el7 will be installed
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] --> Processing Dependency: python-mako >= 0.4.0 for package: python-pecan-0.4.5-2.el7.noarch
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] --> Processing Dependency: python-simplegeneric >= 0.8 for package: python-pecan-0.4.5-2.el7.noarch
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] --> Processing Dependency: python-webob >= 1.2 for package: python-pecan-0.4.5-2.el7.noarch
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] --> Processing Dependency: python-webtest >= 1.3.1 for package: python-pecan-0.4.5-2.el7.noarch
+[2019-09-17 00:15:27,417][ceph-gw][DEBUG ] --> Processing Dependency: python-singledispatch for package: python-pecan-0.4.5-2.el7.noarch
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package python-requests.noarch 0:2.6.0-1.el7_1 will be installed
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] --> Processing Dependency: python-urllib3 >= 1.10.2-1 for package: python-requests-2.6.0-1.el7_1.noarch
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] --> Processing Dependency: python-chardet >= 2.2.1-1 for package: python-requests-2.6.0-1.el7_1.noarch
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package python-werkzeug.noarch 0:0.9.1-2.el7 will be installed
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package python2-bcrypt.x86_64 0:3.1.6-2.el7 will be installed
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] --> Processing Dependency: python2-six for package: python2-bcrypt-3.1.6-2.el7.x86_64
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package rdma-core.x86_64 0:17.2-3.el7 will be installed
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package libbabeltrace.x86_64 0:1.2.4-3.el7 will be installed
+[2019-09-17 00:15:27,419][ceph-gw][DEBUG ] ---> Package libconfig.x86_64 0:1.4.9-5.el7 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package libradosstriper1.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package libstoragemgmt-python.noarch 0:1.6.2-4.el7 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] --> Processing Dependency: libstoragemgmt-python-clibs for package: libstoragemgmt-python-1.6.2-4.el7.noarch
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package python-ceph-argparse.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package python-cephfs.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package python-chardet.noarch 0:2.2.1-1.el7_1 will be installed
+[2019-09-17 00:15:27,420][ceph-gw][DEBUG ] ---> Package python-mako.noarch 0:0.8.1-2.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] --> Processing Dependency: python-beaker for package: python-mako-0.8.1-2.el7.noarch
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-prettytable.noarch 0:0.7.2-3.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-rados.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-rbd.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-rgw.x86_64 2:14.2.4-0.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-simplegeneric.noarch 0:0.8-7.el7 will be installed
+[2019-09-17 00:15:27,444][ceph-gw][DEBUG ] ---> Package python-singledispatch.noarch 0:3.4.0.2-2.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-urllib3.noarch 0:1.10.2-5.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-webob.noarch 0:1.2.3-7.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-webtest.noarch 0:1.3.4-6.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python2-six.noarch 0:1.9.0-0.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package userspace-rcu.x86_64 0:0.7.16-1.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package yajl.x86_64 0:2.0.4-4.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package libstoragemgmt-python-clibs.x86_64 0:1.6.2-4.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-beaker.noarch 0:1.5.4-10.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] --> Processing Dependency: python-paste for package: python-beaker-1.5.4-10.el7.noarch
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-paste.noarch 0:1.7.5.1-9.20111221hg1498.el7 will be installed
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] --> Processing Dependency: python-tempita for package: python-paste-1.7.5.1-9.20111221hg1498.el7.noarch
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] --> Running transaction check
+[2019-09-17 00:15:27,445][ceph-gw][DEBUG ] ---> Package python-tempita.noarch 0:0.5.1-6.el7 will be installed
+[2019-09-17 00:15:27,809][ceph-gw][DEBUG ] --> Finished Dependency Resolution
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] Dependencies Resolved
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ]  Package                     Arch   Version                        Repository
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ]                                                                            Size
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:27,964][ceph-gw][DEBUG ] Installing:
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph                        x86_64 2:14.2.4-0.el7                 Ceph   3.0 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-radosgw                x86_64 2:14.2.4-0.el7                 Ceph   5.3 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ] Installing for dependencies:
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-base                   x86_64 2:14.2.4-0.el7                 Ceph   5.4 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-common                 x86_64 2:14.2.4-0.el7                 Ceph    18 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-mds                    x86_64 2:14.2.4-0.el7                 Ceph   1.8 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-mgr                    x86_64 2:14.2.4-0.el7                 Ceph   1.5 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-mon                    x86_64 2:14.2.4-0.el7                 Ceph   4.5 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-osd                    x86_64 2:14.2.4-0.el7                 Ceph    16 M
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  ceph-selinux                x86_64 2:14.2.4-0.el7                 Ceph    21 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  cryptsetup                  x86_64 2.0.3-3.el7                    base   154 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  leveldb                     x86_64 1.12.0-11.el7                  epel   161 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  libbabeltrace               x86_64 1.2.4-3.el7                    epel   147 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  libcephfs2                  x86_64 2:14.2.4-0.el7                 Ceph   480 k
+[2019-09-17 00:15:27,965][ceph-gw][DEBUG ]  libconfig                   x86_64 1.4.9-5.el7                    base    59 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  libibverbs                  x86_64 17.2-3.el7                     base   246 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  liboath                     x86_64 2.6.2-1.el7                    epel    51 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  librabbitmq                 x86_64 0.8.0-2.el7                    base    37 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  librados2                   x86_64 2:14.2.4-0.el7                 Ceph   3.3 M
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  libradosstriper1            x86_64 2:14.2.4-0.el7                 Ceph   342 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  librbd1                     x86_64 2:14.2.4-0.el7                 Ceph   1.6 M
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  librdmacm                   x86_64 17.2-3.el7                     base    62 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  librgw2                     x86_64 2:14.2.4-0.el7                 Ceph   4.6 M
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  libstoragemgmt              x86_64 1.6.2-4.el7                    base   240 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  libstoragemgmt-python       noarch 1.6.2-4.el7                    base   163 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  libstoragemgmt-python-clibs x86_64 1.6.2-4.el7                    base    19 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  lttng-ust                   x86_64 2.4.1-4.el7                    epel   176 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  mailcap                     noarch 2.1.41-2.el7                   base    31 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  psmisc                      x86_64 22.20-15.el7                   base   141 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  pyOpenSSL                   x86_64 0.13.1-4.el7                   base   135 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  python-beaker               noarch 1.5.4-10.el7                   base    80 k
+[2019-09-17 00:15:27,966][ceph-gw][DEBUG ]  python-ceph-argparse        x86_64 2:14.2.4-0.el7                 Ceph    36 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-cephfs               x86_64 2:14.2.4-0.el7                 Ceph    91 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-chardet              noarch 2.2.1-1.el7_1                  base   227 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-cherrypy             noarch 3.2.2-4.el7                    base   422 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-mako                 noarch 0.8.1-2.el7                    base   307 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-paste                noarch 1.7.5.1-9.20111221hg1498.el7   base   866 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-pecan                noarch 0.4.5-2.el7                    epel   255 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-prettytable          noarch 0.7.2-3.el7                    base    37 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-rados                x86_64 2:14.2.4-0.el7                 Ceph   190 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-rbd                  x86_64 2:14.2.4-0.el7                 Ceph   171 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-requests             noarch 2.6.0-1.el7_1                  base    94 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-rgw                  x86_64 2:14.2.4-0.el7                 Ceph    76 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-simplegeneric        noarch 0.8-7.el7                      epel    12 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-singledispatch       noarch 3.4.0.2-2.el7                  epel    18 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-tempita              noarch 0.5.1-6.el7                    base    33 k
+[2019-09-17 00:15:27,967][ceph-gw][DEBUG ]  python-urllib3              noarch 1.10.2-5.el7                   base   102 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  python-webob                noarch 1.2.3-7.el7                    base   202 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  python-webtest              noarch 1.3.4-6.el7                    base   102 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  python-werkzeug             noarch 0.9.1-2.el7                    extras 562 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  python2-bcrypt              x86_64 3.1.6-2.el7                    epel    39 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  python2-six                 noarch 1.9.0-0.el7                    epel   2.9 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  rdma-core                   x86_64 17.2-3.el7                     base    49 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  userspace-rcu               x86_64 0.7.16-1.el7                   epel    73 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ]  yajl                        x86_64 2.0.4-4.el7                    base    39 k
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ] Transaction Summary
+[2019-09-17 00:15:27,968][ceph-gw][DEBUG ] ================================================================================
+[2019-09-17 00:15:27,969][ceph-gw][DEBUG ] Install  2 Packages (+52 Dependent packages)
+[2019-09-17 00:15:27,969][ceph-gw][DEBUG ] 
+[2019-09-17 00:15:27,969][ceph-gw][DEBUG ] Total download size: 69 M
+[2019-09-17 00:15:27,969][ceph-gw][DEBUG ] Installed size: 225 M
+[2019-09-17 00:15:27,969][ceph-gw][DEBUG ] Downloading packages:
+[2019-09-17 00:15:41,873][ceph-gw][DEBUG ] --------------------------------------------------------------------------------
+[2019-09-17 00:15:41,873][ceph-gw][DEBUG ] Total                                              5.0 MB/s |  69 MB  00:13     
+[2019-09-17 00:15:41,884][ceph-gw][DEBUG ] Running transaction check
+[2019-09-17 00:15:41,951][ceph-gw][DEBUG ] Running transaction test
+[2019-09-17 00:15:42,230][ceph-gw][DEBUG ] Transaction test succeeded
+[2019-09-17 00:15:42,230][ceph-gw][DEBUG ] Running transaction
+[2019-09-17 00:15:42,382][ceph-gw][DEBUG ]   Installing : leveldb-1.12.0-11.el7.x86_64                                1/54 
+[2019-09-17 00:15:42,399][ceph-gw][DEBUG ]   Installing : liboath-2.6.2-1.el7.x86_64                                  2/54 
+[2019-09-17 00:15:42,466][ceph-gw][DEBUG ]   Installing : librabbitmq-0.8.0-2.el7.x86_64                              3/54 
+[2019-09-17 00:15:42,506][ceph-gw][DEBUG ]   Installing : 2:python-ceph-argparse-14.2.4-0.el7.x86_64                  4/54 
+[2019-09-17 00:15:42,620][ceph-gw][DEBUG ]   Installing : pyOpenSSL-0.13.1-4.el7.x86_64                               5/54 
+[2019-09-17 00:15:42,734][ceph-gw][DEBUG ]   Installing : python-webob-1.2.3-7.el7.noarch                             6/54 
+[2019-09-17 00:15:42,854][ceph-gw][DEBUG ]   Installing : yajl-2.0.4-4.el7.x86_64                                     7/54 
+[2019-09-17 00:15:42,968][ceph-gw][DEBUG ]   Installing : rdma-core-17.2-3.el7.x86_64                                 8/54 
+[2019-09-17 00:15:43,082][ceph-gw][DEBUG ]   Installing : libibverbs-17.2-3.el7.x86_64                                9/54 
+[2019-09-17 00:15:43,199][ceph-gw][DEBUG ]   Installing : librdmacm-17.2-3.el7.x86_64                                10/54 
+[2019-09-17 00:15:43,321][ceph-gw][DEBUG ]   Installing : python-webtest-1.3.4-6.el7.noarch                          11/54 
+[2019-09-17 00:15:43,435][ceph-gw][DEBUG ]   Installing : python-chardet-2.2.1-1.el7_1.noarch                        12/54 
+[2019-09-17 00:15:43,550][ceph-gw][DEBUG ]   Installing : userspace-rcu-0.7.16-1.el7.x86_64                          13/54 
+[2019-09-17 00:15:43,979][ceph-gw][DEBUG ]   Installing : lttng-ust-2.4.1-4.el7.x86_64                               14/54 
+[2019-09-17 00:15:44,051][ceph-gw][DEBUG ]   Installing : 2:librados2-14.2.4-0.el7.x86_64                            15/54 
+[2019-09-17 00:15:44,282][ceph-gw][DEBUG ]   Installing : 2:python-rados-14.2.4-0.el7.x86_64                         16/54 
+[2019-09-17 00:15:44,597][ceph-gw][DEBUG ]   Installing : 2:librbd1-14.2.4-0.el7.x86_64                              17/54 
+[2019-09-17 00:15:45,189][ceph-gw][DEBUG ]   Installing : 2:libcephfs2-14.2.4-0.el7.x86_64                           18/54 
+[2019-09-17 00:15:45,226][ceph-gw][DEBUG ]   Installing : 2:librgw2-14.2.4-0.el7.x86_64                              19/54 
+[2019-09-17 00:15:45,290][ceph-gw][DEBUG ]   Installing : 2:python-rgw-14.2.4-0.el7.x86_64                           20/54 
+[2019-09-17 00:15:45,353][ceph-gw][DEBUG ]   Installing : 2:python-cephfs-14.2.4-0.el7.x86_64                        21/54 
+[2019-09-17 00:15:45,475][ceph-gw][DEBUG ]   Installing : 2:python-rbd-14.2.4-0.el7.x86_64                           22/54 
+[2019-09-17 00:15:45,475][ceph-gw][DEBUG ]   Installing : 2:libradosstriper1-14.2.4-0.el7.x86_64                     23/54 
+[2019-09-17 00:15:45,701][ceph-gw][DEBUG ]   Installing : python-tempita-0.5.1-6.el7.noarch                          24/54 
+[2019-09-17 00:15:45,915][ceph-gw][DEBUG ]   Installing : python-paste-1.7.5.1-9.20111221hg1498.el7.noarch           25/54 
+[2019-09-17 00:15:46,090][ceph-gw][DEBUG ]   Installing : python-beaker-1.5.4-10.el7.noarch                          26/54 
+[2019-09-17 00:15:46,259][ceph-gw][DEBUG ]   Installing : python-mako-0.8.1-2.el7.noarch                             27/54 
+[2019-09-17 00:15:46,423][ceph-gw][DEBUG ]   Installing : python-cherrypy-3.2.2-4.el7.noarch                         28/54 
+[2019-09-17 00:15:46,487][ceph-gw][DEBUG ]   Installing : python-prettytable-0.7.2-3.el7.noarch                      29/54 
+[2019-09-17 00:15:46,601][ceph-gw][DEBUG ]   Installing : libconfig-1.4.9-5.el7.x86_64                               30/54 
+[2019-09-17 00:15:46,767][ceph-gw][DEBUG ]   Installing : libstoragemgmt-python-clibs-1.6.2-4.el7.x86_64             31/54 
+[2019-09-17 00:15:46,996][ceph-gw][DEBUG ]   Installing : libstoragemgmt-1.6.2-4.el7.x86_64                          32/54 
+[2019-09-17 00:15:47,111][ceph-gw][DEBUG ]   Installing : libstoragemgmt-python-1.6.2-4.el7.noarch                   33/54 
+[2019-09-17 00:15:47,183][ceph-gw][DEBUG ]   Installing : python-urllib3-1.10.2-5.el7.noarch                         34/54 
+[2019-09-17 00:15:47,397][ceph-gw][DEBUG ]   Installing : python-requests-2.6.0-1.el7_1.noarch                       35/54 
+[2019-09-17 00:15:47,511][ceph-gw][DEBUG ]   Installing : psmisc-22.20-15.el7.x86_64                                 36/54 
+[2019-09-17 00:15:47,626][ceph-gw][DEBUG ]   Installing : cryptsetup-2.0.3-3.el7.x86_64                              37/54 
+[2019-09-17 00:15:49,761][ceph-gw][DEBUG ]   Installing : libbabeltrace-1.2.4-3.el7.x86_64                           38/54 
+[2019-09-17 00:15:50,741][ceph-gw][DEBUG ]   Installing : 2:ceph-common-14.2.4-0.el7.x86_64                          39/54 
+[2019-09-17 00:15:51,211][ceph-gw][DEBUG ]   Installing : 2:ceph-base-14.2.4-0.el7.x86_64                            40/54 
+[2019-09-17 00:16:01,041][ceph-gw][DEBUG ]   Installing : 2:ceph-selinux-14.2.4-0.el7.x86_64                         41/54 
+[2019-09-17 00:16:01,683][ceph-gw][DEBUG ]   Installing : 2:ceph-osd-14.2.4-0.el7.x86_64                             42/54 
+[2019-09-17 00:16:02,059][ceph-gw][DEBUG ]   Installing : 2:ceph-mon-14.2.4-0.el7.x86_64                             43/54 
+[2019-09-17 00:16:02,178][ceph-gw][DEBUG ]   Installing : 2:ceph-mds-14.2.4-0.el7.x86_64                             44/54 
+[2019-09-17 00:16:02,242][ceph-gw][DEBUG ]   Installing : python-singledispatch-3.4.0.2-2.el7.noarch                 45/54 
+[2019-09-17 00:16:02,358][ceph-gw][DEBUG ]   Installing : python-simplegeneric-0.8-7.el7.noarch                      46/54 
+[2019-09-17 00:16:02,633][ceph-gw][DEBUG ]   Installing : python-pecan-0.4.5-2.el7.noarch                            47/54 
+[2019-09-17 00:16:02,797][ceph-gw][DEBUG ]   Installing : python-werkzeug-0.9.1-2.el7.noarch                         48/54 
+[2019-09-17 00:16:02,829][ceph-gw][DEBUG ]   Installing : mailcap-2.1.41-2.el7.noarch                                49/54 
+[2019-09-17 00:16:02,897][ceph-gw][DEBUG ]   Installing : python2-six-1.9.0-0.el7.noarch                             50/54 
+[2019-09-17 00:16:03,125][ceph-gw][DEBUG ]   Installing : python2-bcrypt-3.1.6-2.el7.x86_64                          51/54 
+[2019-09-17 00:16:03,397][ceph-gw][DEBUG ]   Installing : 2:ceph-mgr-14.2.4-0.el7.x86_64                             52/54 
+[2019-09-17 00:16:03,996][ceph-gw][DEBUG ]   Installing : 2:ceph-14.2.4-0.el7.x86_64                                 53/54 
+[2019-09-17 00:16:04,219][ceph-gw][DEBUG ]   Installing : 2:ceph-radosgw-14.2.4-0.el7.x86_64                         54/54 
+[2019-09-17 00:16:04,220][ceph-gw][DEBUG ]   Verifying  : libstoragemgmt-python-1.6.2-4.el7.noarch                    1/54 
+[2019-09-17 00:16:04,236][ceph-gw][DEBUG ]   Verifying  : 2:librados2-14.2.4-0.el7.x86_64                             2/54 
+[2019-09-17 00:16:04,268][ceph-gw][DEBUG ]   Verifying  : liboath-2.6.2-1.el7.x86_64                                  3/54 
+[2019-09-17 00:16:04,268][ceph-gw][DEBUG ]   Verifying  : 2:python-rgw-14.2.4-0.el7.x86_64                            4/54 
+[2019-09-17 00:16:04,268][ceph-gw][DEBUG ]   Verifying  : python2-six-1.9.0-0.el7.noarch                              5/54 
+[2019-09-17 00:16:04,269][ceph-gw][DEBUG ]   Verifying  : 2:ceph-14.2.4-0.el7.x86_64                                  6/54 
+[2019-09-17 00:16:04,273][ceph-gw][DEBUG ]   Verifying  : mailcap-2.1.41-2.el7.noarch                                 7/54 
+[2019-09-17 00:16:04,282][ceph-gw][DEBUG ]   Verifying  : python-werkzeug-0.9.1-2.el7.noarch                          8/54 
+[2019-09-17 00:16:04,283][ceph-gw][DEBUG ]   Verifying  : 2:ceph-mgr-14.2.4-0.el7.x86_64                              9/54 
+[2019-09-17 00:16:04,293][ceph-gw][DEBUG ]   Verifying  : librdmacm-17.2-3.el7.x86_64                                10/54 
+[2019-09-17 00:16:04,294][ceph-gw][DEBUG ]   Verifying  : python2-bcrypt-3.1.6-2.el7.x86_64                          11/54 
+[2019-09-17 00:16:04,311][ceph-gw][DEBUG ]   Verifying  : 2:ceph-osd-14.2.4-0.el7.x86_64                             12/54 
+[2019-09-17 00:16:04,313][ceph-gw][DEBUG ]   Verifying  : python-simplegeneric-0.8-7.el7.noarch                      13/54 
+[2019-09-17 00:16:04,323][ceph-gw][DEBUG ]   Verifying  : rdma-core-17.2-3.el7.x86_64                                14/54 
+[2019-09-17 00:16:04,324][ceph-gw][DEBUG ]   Verifying  : python-singledispatch-3.4.0.2-2.el7.noarch                 15/54 
+[2019-09-17 00:16:04,330][ceph-gw][DEBUG ]   Verifying  : libstoragemgmt-1.6.2-4.el7.x86_64                          16/54 
+[2019-09-17 00:16:04,335][ceph-gw][DEBUG ]   Verifying  : 2:ceph-base-14.2.4-0.el7.x86_64                            17/54 
+[2019-09-17 00:16:04,340][ceph-gw][DEBUG ]   Verifying  : yajl-2.0.4-4.el7.x86_64                                    18/54 
+[2019-09-17 00:16:04,345][ceph-gw][DEBUG ]   Verifying  : libbabeltrace-1.2.4-3.el7.x86_64                           19/54 
+[2019-09-17 00:16:04,348][ceph-gw][DEBUG ]   Verifying  : python-mako-0.8.1-2.el7.noarch                             20/54 
+[2019-09-17 00:16:04,358][ceph-gw][DEBUG ]   Verifying  : cryptsetup-2.0.3-3.el7.x86_64                              21/54 
+[2019-09-17 00:16:04,359][ceph-gw][DEBUG ]   Verifying  : 2:ceph-common-14.2.4-0.el7.x86_64                          22/54 
+[2019-09-17 00:16:04,367][ceph-gw][DEBUG ]   Verifying  : 2:libradosstriper1-14.2.4-0.el7.x86_64                     23/54 
+[2019-09-17 00:16:04,399][ceph-gw][DEBUG ]   Verifying  : 2:python-rados-14.2.4-0.el7.x86_64                         24/54 
+[2019-09-17 00:16:04,400][ceph-gw][DEBUG ]   Verifying  : 2:librbd1-14.2.4-0.el7.x86_64                              25/54 
+[2019-09-17 00:16:04,400][ceph-gw][DEBUG ]   Verifying  : 2:ceph-mon-14.2.4-0.el7.x86_64                             26/54 
+[2019-09-17 00:16:04,400][ceph-gw][DEBUG ]   Verifying  : psmisc-22.20-15.el7.x86_64                                 27/54 
+[2019-09-17 00:16:04,403][ceph-gw][DEBUG ]   Verifying  : python-urllib3-1.10.2-5.el7.noarch                         28/54 
+[2019-09-17 00:16:04,414][ceph-gw][DEBUG ]   Verifying  : leveldb-1.12.0-11.el7.x86_64                               29/54 
+[2019-09-17 00:16:04,415][ceph-gw][DEBUG ]   Verifying  : 2:ceph-mds-14.2.4-0.el7.x86_64                             30/54 
+[2019-09-17 00:16:04,421][ceph-gw][DEBUG ]   Verifying  : 2:libcephfs2-14.2.4-0.el7.x86_64                           31/54 
+[2019-09-17 00:16:04,424][ceph-gw][DEBUG ]   Verifying  : libconfig-1.4.9-5.el7.x86_64                               32/54 
+[2019-09-17 00:16:04,434][ceph-gw][DEBUG ]   Verifying  : 2:ceph-selinux-14.2.4-0.el7.x86_64                         33/54 
+[2019-09-17 00:16:04,435][ceph-gw][DEBUG ]   Verifying  : 2:ceph-radosgw-14.2.4-0.el7.x86_64                         34/54 
+[2019-09-17 00:16:04,445][ceph-gw][DEBUG ]   Verifying  : python-paste-1.7.5.1-9.20111221hg1498.el7.noarch           35/54 
+[2019-09-17 00:16:04,446][ceph-gw][DEBUG ]   Verifying  : lttng-ust-2.4.1-4.el7.x86_64                               36/54 
+[2019-09-17 00:16:04,457][ceph-gw][DEBUG ]   Verifying  : python-webob-1.2.3-7.el7.noarch                            37/54 
+[2019-09-17 00:16:04,458][ceph-gw][DEBUG ]   Verifying  : python-pecan-0.4.5-2.el7.noarch                            38/54 
+[2019-09-17 00:16:04,463][ceph-gw][DEBUG ]   Verifying  : pyOpenSSL-0.13.1-4.el7.x86_64                              39/54 
+[2019-09-17 00:16:04,467][ceph-gw][DEBUG ]   Verifying  : 2:librgw2-14.2.4-0.el7.x86_64                              40/54 
+[2019-09-17 00:16:04,478][ceph-gw][DEBUG ]   Verifying  : python-prettytable-0.7.2-3.el7.noarch                      41/54 
+[2019-09-17 00:16:04,479][ceph-gw][DEBUG ]   Verifying  : 2:python-rbd-14.2.4-0.el7.x86_64                           42/54 
+[2019-09-17 00:16:04,494][ceph-gw][DEBUG ]   Verifying  : python-cherrypy-3.2.2-4.el7.noarch                         43/54 
+[2019-09-17 00:16:04,507][ceph-gw][DEBUG ]   Verifying  : python-beaker-1.5.4-10.el7.noarch                          44/54 
+[2019-09-17 00:16:04,508][ceph-gw][DEBUG ]   Verifying  : python-tempita-0.5.1-6.el7.noarch                          45/54 
+[2019-09-17 00:16:04,518][ceph-gw][DEBUG ]   Verifying  : python-requests-2.6.0-1.el7_1.noarch                       46/54 
+[2019-09-17 00:16:04,519][ceph-gw][DEBUG ]   Verifying  : 2:python-cephfs-14.2.4-0.el7.x86_64                        47/54 
+[2019-09-17 00:16:04,525][ceph-gw][DEBUG ]   Verifying  : userspace-rcu-0.7.16-1.el7.x86_64                          48/54 
+[2019-09-17 00:16:04,530][ceph-gw][DEBUG ]   Verifying  : python-chardet-2.2.1-1.el7_1.noarch                        49/54 
+[2019-09-17 00:16:04,534][ceph-gw][DEBUG ]   Verifying  : python-webtest-1.3.4-6.el7.noarch                          50/54 
+[2019-09-17 00:16:04,543][ceph-gw][DEBUG ]   Verifying  : libibverbs-17.2-3.el7.x86_64                               51/54 
+[2019-09-17 00:16:04,559][ceph-gw][DEBUG ]   Verifying  : 2:python-ceph-argparse-14.2.4-0.el7.x86_64                 52/54 
+[2019-09-17 00:16:04,565][ceph-gw][DEBUG ]   Verifying  : libstoragemgmt-python-clibs-1.6.2-4.el7.x86_64             53/54 
+[2019-09-17 00:16:05,556][ceph-gw][DEBUG ]   Verifying  : librabbitmq-0.8.0-2.el7.x86_64                             54/54 
+[2019-09-17 00:16:05,556][ceph-gw][DEBUG ] 
+[2019-09-17 00:16:05,556][ceph-gw][DEBUG ] Installed:
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph.x86_64 2:14.2.4-0.el7         ceph-radosgw.x86_64 2:14.2.4-0.el7        
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ] 
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ] Dependency Installed:
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-base.x86_64 2:14.2.4-0.el7                                               
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-common.x86_64 2:14.2.4-0.el7                                             
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-mds.x86_64 2:14.2.4-0.el7                                                
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-mgr.x86_64 2:14.2.4-0.el7                                                
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-mon.x86_64 2:14.2.4-0.el7                                                
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-osd.x86_64 2:14.2.4-0.el7                                                
+[2019-09-17 00:16:05,557][ceph-gw][DEBUG ]   ceph-selinux.x86_64 2:14.2.4-0.el7                                            
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   cryptsetup.x86_64 0:2.0.3-3.el7                                               
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   leveldb.x86_64 0:1.12.0-11.el7                                                
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   libbabeltrace.x86_64 0:1.2.4-3.el7                                            
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   libcephfs2.x86_64 2:14.2.4-0.el7                                              
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   libconfig.x86_64 0:1.4.9-5.el7                                                
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   libibverbs.x86_64 0:17.2-3.el7                                                
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   liboath.x86_64 0:2.6.2-1.el7                                                  
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   librabbitmq.x86_64 0:0.8.0-2.el7                                              
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   librados2.x86_64 2:14.2.4-0.el7                                               
+[2019-09-17 00:16:05,558][ceph-gw][DEBUG ]   libradosstriper1.x86_64 2:14.2.4-0.el7                                        
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   librbd1.x86_64 2:14.2.4-0.el7                                                 
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   librdmacm.x86_64 0:17.2-3.el7                                                 
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   librgw2.x86_64 2:14.2.4-0.el7                                                 
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   libstoragemgmt.x86_64 0:1.6.2-4.el7                                           
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   libstoragemgmt-python.noarch 0:1.6.2-4.el7                                    
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   libstoragemgmt-python-clibs.x86_64 0:1.6.2-4.el7                              
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   lttng-ust.x86_64 0:2.4.1-4.el7                                                
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   mailcap.noarch 0:2.1.41-2.el7                                                 
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   psmisc.x86_64 0:22.20-15.el7                                                  
+[2019-09-17 00:16:05,559][ceph-gw][DEBUG ]   pyOpenSSL.x86_64 0:0.13.1-4.el7                                               
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-beaker.noarch 0:1.5.4-10.el7                                           
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-ceph-argparse.x86_64 2:14.2.4-0.el7                                    
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-cephfs.x86_64 2:14.2.4-0.el7                                           
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-chardet.noarch 0:2.2.1-1.el7_1                                         
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-cherrypy.noarch 0:3.2.2-4.el7                                          
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-mako.noarch 0:0.8.1-2.el7                                              
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-paste.noarch 0:1.7.5.1-9.20111221hg1498.el7                            
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-pecan.noarch 0:0.4.5-2.el7                                             
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-prettytable.noarch 0:0.7.2-3.el7                                       
+[2019-09-17 00:16:05,560][ceph-gw][DEBUG ]   python-rados.x86_64 2:14.2.4-0.el7                                            
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-rbd.x86_64 2:14.2.4-0.el7                                              
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-requests.noarch 0:2.6.0-1.el7_1                                        
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-rgw.x86_64 2:14.2.4-0.el7                                              
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-simplegeneric.noarch 0:0.8-7.el7                                       
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-singledispatch.noarch 0:3.4.0.2-2.el7                                  
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-tempita.noarch 0:0.5.1-6.el7                                           
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-urllib3.noarch 0:1.10.2-5.el7                                          
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-webob.noarch 0:1.2.3-7.el7                                             
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-webtest.noarch 0:1.3.4-6.el7                                           
+[2019-09-17 00:16:05,561][ceph-gw][DEBUG ]   python-werkzeug.noarch 0:0.9.1-2.el7                                          
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ]   python2-bcrypt.x86_64 0:3.1.6-2.el7                                           
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ]   python2-six.noarch 0:1.9.0-0.el7                                              
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ]   rdma-core.x86_64 0:17.2-3.el7                                                 
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ]   userspace-rcu.x86_64 0:0.7.16-1.el7                                           
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ]   yajl.x86_64 0:2.0.4-4.el7                                                     
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ] 
+[2019-09-17 00:16:05,562][ceph-gw][DEBUG ] Complete!
+[2019-09-17 00:16:05,808][ceph-gw][INFO  ] Running command: ceph --version
+[2019-09-17 00:16:06,347][ceph-gw][DEBUG ] ceph version 14.2.4 (75f4de193b3ea58512f204623e6c5a16e6c1e1ba) nautilus (stable)
