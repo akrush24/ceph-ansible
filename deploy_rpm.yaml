@@ -12,27 +12,20 @@
   become_user: root
   become_method: sudo
   tasks:
-  - name: Set timezone to Asia/Tokyo
+  - name: Set timezone
     timezone:
       name: Europe/Moscow
   - name: copy hosts file
     copy:
       src: /etc/hosts
       dest: /etc/hosts
-  - name: copy zabbix_agentd.conf
-    copy:
-      src: ./zabbix_agentd.conf
-      dest: "{{ item }}"
-    with_items:
-    - /etc/zabbix/
-    - /etc/
   - name: install EPEL
     yum:
       name: epel-release
   - name: install pkgs
     yum:
       name: "{{ packages }}"
-    vars: 
+    vars:
       packages:
       - chrony
       - bash-completion
@@ -40,6 +33,54 @@
       - iperf3
       - sysstat
       - smartmontools
+      - lshw
+      - hwinfo
+      - net-tools
+      - telnet
+      - fio
+      - hdparm
+      - ipmitool
+      - wget
+      - jnettop
+      - htop
+
+  - name: copy zabbix_agentd.conf
+    copy:
+      src: ./zabbix/zabbix_agentd.conf
+      dest: "{{ item }}"
+    with_items:
+    - /etc/
+    register: zabbixupconfig
+  - name: Creates directory
+    file:
+      path: /etc/zabbix/scripts
+      owner: root
+      group: zabbix
+      mode: 0770
+      state: directory
+  - name: copy iostat.sh
+    copy:
+      src: ./zabbix/iostat.sh
+      dest: "{{ item }}"
+      owner: root
+      group: zabbix
+      mode: 0770
+    with_items:
+    - /etc/zabbix/scripts
+  - name: copy smartctl-disks-discovery.pl
+    copy:
+      src: ./zabbix/smartctl-disks-discovery.pl
+      dest: "{{ item }}"
+      owner: root
+      group: zabbix
+      mode: 0770
+    with_items:
+    - /etc/zabbix/scripts
+  - name: restart zabbix-agent
+    systemd:
+      name: zabbix-agent
+      state: restarted
+    when: zabbixupconfig.changed
   - name: Make sure a service is running
     systemd:
       state: started
