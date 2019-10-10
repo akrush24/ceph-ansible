@@ -76,6 +76,15 @@
       mode: 0770
     with_items:
     - /etc/zabbix/scripts
+  - name: copu zabbix_sudo
+    copy:
+      src: ./zabbix/zabbix_sudo
+      dest: "{{ item }}"
+      owner: root
+      group: root
+      mode: 0600
+    with_items:
+    - /etc/sudoers.d
   - name: restart zabbix-agent
     systemd:
       name: zabbix-agent
