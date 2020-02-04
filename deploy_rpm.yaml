@@ -43,6 +43,7 @@
       - wget
       - jnettop
       - htop
+      - pv
 
   - name: copy zabbix_agentd.conf
     copy:
