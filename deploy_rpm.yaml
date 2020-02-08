@@ -23,32 +23,36 @@
     copy:
       src: /etc/hosts
       dest: /etc/hosts
-  - name: install EPEL
-    yum:
-      name: epel-release
-  - name: install pkgs
-    yum:
-      name: "{{ packages }}"
-    vars:
-      packages:
-      - chrony
-      - bash-completion
-      - zabbix40-agent
-      - iperf3
-      - sysstat
-      - smartmontools
-      - lshw
-      - hwinfo
-      - net-tools
-      - telnet
-      - fio
-      - hdparm
-      - ipmitool
-      - wget
-      - jnettop
-      - htop
-      - pv
-      - hping3
+
+  - block: # --! Block for RPM Based OS !--
+    - name: install EPEL
+      yum:
+        name: epel-release
+
+    - name: install pkgs
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - chrony
+        - bash-completion
+        - zabbix40-agent
+        - iperf3
+        - sysstat
+        - smartmontools
+        - lshw
+        - hwinfo
+        - net-tools
+        - telnet
+        - fio
+        - hdparm
+        - ipmitool
+        - wget
+        - jnettop
+        - htop
+        - pv
+        - hping3
+    when: ansible_os_family == "RedHat"
 
   - name: copy zabbix_agentd.conf
     copy:
@@ -65,6 +69,7 @@
       group: zabbix
       mode: 0770
       state: directory
+
   - name: copy iostat.sh
     copy:
       src: ./zabbix/iostat.sh
@@ -74,6 +79,7 @@
       mode: 0770
     with_items:
     - /etc/zabbix/scripts
+
   - name: copy smartctl-disks-discovery.pl
     copy:
       src: ./zabbix/smartctl-disks-discovery.pl
@@ -83,6 +89,7 @@
       mode: 0770
     with_items:
     - /etc/zabbix/scripts
+
   - name: copu zabbix_sudo
     copy:
       src: ./zabbix/zabbix_sudo
@@ -105,6 +112,7 @@
     - chronyd
     - zabbix-agent
     - sysstat
+
   - name: enable service chronyd and ensure it is not masked
     systemd:
       name: "{{ item }}"
@@ -113,14 +121,17 @@
     with_items:
     - chronyd
     - zabbix-agent
+
   - name: Stop and disable firewalld.
     service:
       name: firewalld
       state: stopped
       enabled: False
+
   - name: Disable SELinux
     selinux:
       state: disabled
+
   - name: Disable IPv6 with sysctl
     sysctl: name={{ item }} value=1 state=present
     with_items:
@@ -146,7 +157,7 @@
 #  - include: ipv6-grub-disable.yml
 
   handlers:
-  - name: Restart Zabbix Agent 
+  - name: Restart Zabbix Agent
     systemd: name=zabbix-agent state=restarted
 
 - name: print info
