@@ -4,16 +4,21 @@
 #
 
 ---
-- name: preInstallation 
+- name: preInstallation
+
+  hosts: all
+  tasks:
+  - name: Set timezone
+    timezone:
+      name: Europe/Moscow
+
+- name: prepare
   hosts: CEPH
 
   vars:
     varsion: 0.11
 
   tasks:
-  - name: Set timezone
-    timezone:
-      name: Europe/Moscow
   - name: copy hosts file
     copy:
       src: /etc/hosts
@@ -143,3 +148,17 @@
   handlers:
   - name: Restart Zabbix Agent 
     systemd: name=zabbix-agent state=restarted
+
+- name: print info
+  hosts: all
+
+  tasks:
+
+  - name: print info
+    debug:
+      var: ansible_os_family
+
+  - shell: uptime
+    register: uptime
+  - debug:
+      var: uptime.stdout
