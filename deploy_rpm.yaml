@@ -2,14 +2,13 @@
 #  ansible -i inv  all -a date
 #  ansible -i inv  all -m setup
 #
+
+---
 - name: preInstallation 
-  hosts: all
-  remote_user: root
-  connection: ssh
-  gather_facts: True
-  become: yes
-  become_user: root
-  become_method: sudo
+  hosts: CEPH
+
+  vars:
+    varsion: 0.11
 
   tasks:
   - name: Set timezone
@@ -52,7 +51,8 @@
       dest: "{{ item }}"
     with_items:
     - /etc/
-    register: zabbixupconfig
+    notify: Restart Zabbix Agent
+
   - name: Creates directory
     file:
       path: /etc/zabbix/scripts
@@ -87,11 +87,11 @@
       mode: 0600
     with_items:
     - /etc/sudoers.d
-  - name: restart zabbix-agent
-    systemd:
-      name: zabbix-agent
-      state: restarted
-    when: zabbixupconfig.changed
+#  - name: restart zabbix-agent
+#    systemd:
+#      name: zabbix-agent
+#      state: restarted
+#    when: zabbixupconfig.changed
   - name: Make sure a service is running
     systemd:
       state: started
@@ -139,3 +139,7 @@
     notify:
       - restart network
 #  - include: ipv6-grub-disable.yml
+
+  handlers:
+  - name: Restart Zabbix Agent 
+    systemd: name=zabbix-agent state=restarted
