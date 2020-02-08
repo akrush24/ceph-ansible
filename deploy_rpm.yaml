@@ -44,7 +44,7 @@
       - jnettop
       - htop
       - pv
-      - hping
+      - hping3
 
   - name: copy zabbix_agentd.conf
     copy:
