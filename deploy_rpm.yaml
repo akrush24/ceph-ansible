@@ -2,15 +2,15 @@
 #  ansible -i inv  all -a date
 #  ansible -i inv  all -m setup
 #
-
-- hosts: all
-  #remote_user: cephadm
+- name: preInstallation 
+  hosts: all
   remote_user: root
   connection: ssh
   gather_facts: True
   become: yes
   become_user: root
   become_method: sudo
+
   tasks:
   - name: Set timezone
     timezone:

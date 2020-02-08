@@ -1,7 +1,9 @@
-[nodes]
+[NODES]
 n[01:04].sds.srv.local
-[osd]
+[OSD]
 n[01:04].sds.srv.local
-[mon]
+[MON]
 n[01:04].sds.srv.local
-[mds]
+[MDS]
+[MGMT]
+localhost
