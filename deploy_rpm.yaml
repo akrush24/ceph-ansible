@@ -8,21 +8,23 @@
 
   hosts: all
   tasks:
+
   - name: Set timezone
     timezone:
       name: Europe/Moscow
+
+  - name: copy hosts file
+    copy:
+      src: /etc/hosts
+      dest: /etc/hosts
 
 - name: prepare
   hosts: CEPH
 
   vars:
-    varsion: 0.11
+    desc: "for ceph nodes"
 
   tasks:
-  - name: copy hosts file
-    copy:
-      src: /etc/hosts
-      dest: /etc/hosts
 
   - block: # --! Block for RPM Based OS !--
     - name: install EPEL
@@ -90,7 +92,7 @@
     with_items:
     - /etc/zabbix/scripts
 
-  - name: copu zabbix_sudo
+  - name: copy zabbix_sudo
     copy:
       src: ./zabbix/zabbix_sudo
       dest: "{{ item }}"
@@ -121,6 +123,7 @@
     with_items:
     - chronyd
     - zabbix-agent
+    #when: ansible_os_family == "RedHat"
 
   - name: Stop and disable firewalld.
     service:
