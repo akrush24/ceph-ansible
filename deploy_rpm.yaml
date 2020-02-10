@@ -32,10 +32,8 @@
         name: epel-release
 
     - name: install pkgs
-      yum:
-        name: "{{ packages }}"
-      vars:
-        packages:
+      yum: name="{{ item }}" state=installed
+      loop:
         - chrony
         - bash-completion
         - zabbix40-agent
@@ -57,9 +55,7 @@
     when: ansible_os_family == "RedHat"
 
   - name: copy zabbix_agentd.conf
-    copy:
-      src: ./zabbix/zabbix_agentd.conf
-      dest: "{{ item }}"
+    copy: src="./zabbix/zabbix_agentd.conf" dest="{{ item }}"
     with_items:
     - /etc/
     notify: Restart Zabbix Agent
