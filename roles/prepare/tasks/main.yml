@@ -113,4 +113,5 @@
     - { regexp: 'IPV6INIT=.*', line: 'IPV6INIT=no' }
   notify:
     - Restart Network
+- include: ipv6-grub-disable.yml
 
