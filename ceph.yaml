@@ -1,0 +1,6 @@
+---
+- hosts: CEPH
+  become: yes
+
+  roles:
+  - prepare

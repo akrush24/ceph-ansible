@@ -1,0 +1,116 @@
+---
+# tasks file for prepare
+- block: # --! Block for RPM Based OS !--
+  - name: install EPEL
+    yum:
+      name: epel-release
+
+  - name: install pkgs
+    yum: name="{{ item }}" state=installed
+    loop:
+      - chrony
+      - bash-completion
+      - zabbix40-agent
+      - iperf3
+      - sysstat
+      - smartmontools
+      - lshw
+      - hwinfo
+      - net-tools
+      - telnet
+      - fio
+      - hdparm
+      - ipmitool
+      - wget
+      - jnettop
+      - htop
+      - pv
+      - hping3
+    when: ansible_os_family == "RedHat"
+
+- name: copy zabbix_agentd.conf
+  copy: src="zabbix_agentd.conf" dest="{{ item }}"
+  with_items:
+  - /etc/
+  notify: Restart Zabbix Agent
+
+- name: Creates directory
+  file:
+    path: /etc/zabbix/scripts
+    owner: root
+    group: zabbix
+    mode: 0770
+    state: directory
+
+- name: copy iostat.sh
+  copy:
+    src: iostat.sh
+    dest: "{{ item }}"
+    owner: root
+    group: zabbix
+    mode: 0770
+  with_items:
+  - /etc/zabbix/scripts
+
+- name: copy zabbix_sudo
+  copy:
+    src: zabbix_sudo
+    dest: "{{ item }}"
+    owner: root
+    group: root
+    mode: 0600
+  with_items:
+  - /etc/sudoers.d
+
+- name: Make sure a service is running
+  systemd:
+    state: started
+    name: "{{ item }}"
+  with_items:
+  - chronyd
+  - zabbix-agent
+  - sysstat
+
+- name: enable service chronyd and ensure it is not masked
+  systemd:
+    name: "{{ item }}"
+    enabled: yes
+    masked: no
+  with_items:
+  - chronyd
+  - zabbix-agent
+  - sysstat
+
+- name: Stop and disable firewalld.
+  service:
+    name: firewalld
+    state: stopped
+    enabled: False
+
+- name: Disable SELinux
+  selinux:
+    state: disabled
+
+- name: Disable IPv6 with sysctl
+  sysctl: name={{ item }} value=1 state=present
+  with_items:
+    - net.ipv6.conf.all.disable_ipv6
+    - net.ipv6.conf.default.disable_ipv6
+    - net.ipv6.conf.lo.disable_ipv6
+- name: RedHat | placeholder true for ipv6 in modprobe
+  lineinfile: "dest=/etc/modprobe.conf line='install ipv6 /bin/true' create=yes"
+  notify:
+    - rmmodipv6
+- name: RedHat | disable ipv6 in sysconfig/network
+  lineinfile:
+    dest: /etc/sysconfig/network
+    regexp: "^{{ item.regexp }}"
+    line: "{{ item.line }}"
+    backup: yes
+    create: yes
+  with_items:
+    - { regexp: 'NETWORKING_IPV6=.*', line: 'NETWORKING_IPV6=NO' }
+    - { regexp: 'IPV6INIT=.*', line: 'IPV6INIT=no' }
+  notify:
+    - Restart Network
+

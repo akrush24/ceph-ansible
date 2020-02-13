@@ -1,0 +1,7 @@
+---
+# handlers file for prepare
+
+- name: Restart Zabbix Agent
+  systemd: name=zabbix-agent state=restarted
+- name: Restart Network
+  systemd: name=network state=restarted
