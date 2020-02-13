@@ -1,0 +1,14 @@
+---
+# handlers file for prepare
+
+- name: Restart Zabbix Agent
+  systemd: name=zabbix-agent state=restarted
+- name: Restart Network
+  systemd: name=network state=restarted
+
+- name: grub2-mkconfig
+  command: grub2-mkconfig -o /boot/grub2/grub.cfg
+  when: >
+    not (ansible_virtualization_type is defined and
+          (ansible_virtualization_type == "lxc" or ansible_virtualization_type == "docker")
+        )

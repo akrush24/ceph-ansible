@@ -1,0 +1,7 @@
+---
+remote_user:   root
+connection:    ssh
+gather_facts:  True
+become:        yes
+become_user:   root
+become_method: sudo

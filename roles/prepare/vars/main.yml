@@ -1,0 +1,4 @@
+---
+# vars file for prepare
+
+SSH_PORT: 22
