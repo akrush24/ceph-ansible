@@ -1,5 +1,5 @@
 ---
-- name: First prepade servers for CEPH installation
+- name: First prepare servers for CEPH installation
   hosts: CEPH
   become: yes
 
