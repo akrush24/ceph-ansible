@@ -1,6 +1,21 @@
 ---
-- hosts: CEPH
+- name: First prepade servers for CEPH installation
+  hosts: CEPH
   become: yes
 
   roles:
   - prepare
+
+- name: First prepare for all hosts (ceph + mgmt)
+  hosts: all
+  tasks:
+
+  - name: Set timezone
+    timezone:
+      name: Europe/Moscow
+
+  - name: copy hosts file
+    copy:
+      src: /etc/hosts
+      dest: /etc/hosts
+
